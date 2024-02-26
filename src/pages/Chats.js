@@ -25,7 +25,7 @@ export const Chats = () => {
         <CardBody>
             <Stack divider={<StackDivider />} spacing='4'>
             { chat.map((x)=>
-            <Box >
+            <Box key={x._id}>
                 <Heading size='xs' textTransform='uppercase'>
                 <Box display="flex" alignItems="center" >
                     <div><Avatar mr={2} size='xs' name={x.chatName} src='https://bit.ly/broken-link'  /> </div>
